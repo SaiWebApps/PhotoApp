@@ -1,0 +1,56 @@
+﻿.homepage section[role=main] {
+    margin-left: 129px;
+    margin-right: -129px;
+}
+
+#header {
+	margin: 0px;
+	width: auto;
+	height: auto;
+	-ms-grid-column-align: stretch;
+	-ms-grid-row-align: stretch;
+}
+
+#mainContent {
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    -ms-grid-row-span: 1;
+}
+
+#imageGrid {
+	display: -ms-grid;
+	-ms-grid-columns: auto auto;
+}
+
+#photoButton {
+    background-color:cornflowerblue;
+}
+
+img {
+    width : 375px;
+    max-height : 400px;
+	margin-top:20px;
+    background-color: grey;
+	-ms-grid-column: 1;
+}
+
+#imageInfoContainer {
+  margin-top: 20px;
+  -ms-grid-column: 2;
+  margin-left: 20px;
+}
+
+#imageInfoContainer > div {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.go_to_gallery {
+	width: auto;
+	height: auto;
+	-ms-grid-column-align: stretch;
+	-ms-grid-row-align: stretch;
+	margin: 0px 1166px 0px 0px;
+	-ms-grid-column-span: 3;
+	position: relative;
+}

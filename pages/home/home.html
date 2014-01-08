@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+ </head>
+
+ <body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <!-- Heading -->
+        <header id="header" aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+              <span class="pagetitle">Upload a Photo</span>
+            </h1>
+        </header>
+        
+        <!-- Main Content-->
+        <section id="mainContent" aria-label="Main content" role="main">
+            <div id="contentGrid">
+                <button id="photoButton">Get photo</button>
+                <div class="pageSubheader" data-win-bind="innerHTML: displayName"></div>
+                
+                <div id="imageGrid">
+                    <img src="#" data-win-bind="src: src" />
+                    <div id="imageInfoContainer">
+                        <label>File name:</label>
+                        <div id="name" data-win-bind="innerHTML: name">???</div>
+                        <label>Path:</label>
+                        <div data-win-bind="innerHTML: path">???</div>
+                        <label>Date created:</label>
+                        <div data-win-bind="innerHTML: dateCreated">???</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+ </body>
+</html>
